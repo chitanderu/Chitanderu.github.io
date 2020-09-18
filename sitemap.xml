@@ -212,14 +212,14 @@
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/index.html</loc>
+    <loc>https://chitanderu.xyz/rss/index.html</loc>
     
     <lastmod>2020-03-16</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/rss/index.html</loc>
+    <loc>https://chitanderu.xyz/tags/index.html</loc>
     
     <lastmod>2020-03-16</lastmod>
     
@@ -242,6 +242,13 @@
 
   
   <url>
+    <loc>https://chitanderu.xyz/tags/future/</loc>
+    <lastmod>2020-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chitanderu.xyz/tags/web/</loc>
     <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
@@ -250,13 +257,6 @@
   
   <url>
     <loc>https://chitanderu.xyz/tags/%E6%82%A6%E8%AF%BB/</loc>
-    <lastmod>2020-09-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chitanderu.xyz/tags/future/</loc>
     <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -277,14 +277,14 @@
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/java/</loc>
+    <loc>https://chitanderu.xyz/tags/%E6%97%A5%E6%9C%AC/</loc>
     <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/%E6%97%A5%E6%9C%AC/</loc>
+    <loc>https://chitanderu.xyz/tags/java/</loc>
     <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -335,14 +335,14 @@
 
   
   <url>
-    <loc>https://chitanderu.xyz/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://chitanderu.xyz/categories/Diary/</loc>
     <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/categories/Diary/</loc>
+    <loc>https://chitanderu.xyz/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2020-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
