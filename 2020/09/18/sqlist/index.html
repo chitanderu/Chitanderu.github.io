@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Category: 日本 | 星空夏至</title>
+  <title itemprop="name">线性表的基本实现 | 星空夏至</title>
   
     <link rel="shortcut icon" href="https://i.loli.net/2020/06/19/lZKqNgkM5XGB9wd.jpg">
   
@@ -304,105 +304,270 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
 
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img data-src="https://i.loli.net/2020/04/17/iFwxcynUHmNE3aj.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://i.loli.net/2020/09/18/Kt4a2Y3fwZASdPJ.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://i.loli.net/2020/09/18/Kt4a2Y3fwZASdPJ.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      线性表的基本实现</h1>
+      <p class="entry-census">
+        <span>
+          <a href="No">
+            <img src="https://i.loli.net/2020/09/11/jfVQXTG7MsUx6PF.jpg">
+          </a>
+        </span>
+        <span>
+          <a href="No">科科</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-9-18<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">日记</h1>
-    <span class="cat-des">
-      <p>Geek – Only for Love</p>
-    </span>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/04/12/new-japam/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="线性表的定义"><a href="#线性表的定义" class="headerlink" title="线性表的定义"></a>线性表的定义</h1><p>在计算机中线性表有两种存储结构分别是顺序存储结构和链式存储结构。</p>
+<blockquote>
+<p>线性表的顺序表示(又称顺序存储结构或顺序映象)</p>
+</blockquote>
+<p>顺序存储定义:把逻辑上相邻的数据元素存储在物理上相邻的存储单元中的存储结构。</p>
+<p>线性表的顺序存储结构是指用一段地址连续的存储单元依次存储线性表的数据元素。</p>
+<p>例如:线性表(1,2,3,4,5,6)</p>
+<p><img src="https://i0.hdslb.com/bfs/article/8f039125bc2e38d1b52cdc4e464a86d402e8c9b4.png"></p>
+<p>线性表的第1个数据元素a1的存储位置称为线性表的起始位置或基地址.</p>
+<p><img src="https://i0.hdslb.com/bfs/article/9bf2499cd95e24e4c3ee1d2e6809274a7a6bd6c8.png@1054w_478h.webp"></p>
+<h1 id="线性表容易出错的地方"><a href="#线性表容易出错的地方" class="headerlink" title="线性表容易出错的地方"></a>线性表容易出错的地方</h1><p>物理位置和逻辑位置</p>
+<p>由于数组是从a[0]开始的，而一个线性表是从1开始计算长度的，所以线性表的第i个元素所在的数组为a[i-1];</p>
+<p>   也就是 逻辑位序和物理位序相差1 </p>
+<table>
+<thead>
+<tr>
+<th>4  首元素</th>
+<th>2</th>
+<th>44</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a[0]</td>
+<td>a[1]</td>
+<td>a[3]</td>
+<td>a[4]</td>
+</tr>
+</tbody></table>
+<p>因此 传参数的时候要注意传的是物理位序还是逻辑位序</p>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><pre><code>  #include&lt;iostream&gt;
+  #include&lt;malloc.h&gt;
+  using namespace std;
+  const int MAXSIZE=2000;
+  typedef int datatype;
+  typedef struct node * List;
+  struct node&#123;
+     datatype num[MAXSIZE];//存放的数
+     int n; //表长
+  &#125;;
+  List L;
+
+  List makeEmpty()
+  &#123;   List L;
+     L=(List)malloc(sizeof(struct node));
+     L-&gt;n=0;
+     return L;
+
+  &#125;  //初始化为0的表长
+
+
+  int Find(datatype n,List L)   //按照值查找
+  &#123;   int i=0;
+     while(i&lt;=L-&gt;n&amp;&amp;L-&gt;num[i]!=n)  //以最大值为终止点，在未查找到对应数做i++;
+     &#123;
+        i++;
+     &#125;
+
+     if(i&gt;L-&gt;n)
+     return -1;
+
+     else
+     &#123;
+        return i;
+     &#125;
+
+
+
+  &#125;
+
+  int Length(List L)
+  &#123;
+     return L-&gt;n;
+  &#125;
+
+  void insert(datatype x,int i,List L)
+  &#123;   int j;
+  if(L-&gt;n==MAXSIZE-1) 
+     &#123;
+              cout&lt;&lt;&quot;full list!&quot;;
+              return ;  //表满
+     &#125;
+
+           if(i&lt;0||i&gt;L-&gt;n+1)
+           &#123;
+
+              cout&lt;&lt;&quot;error place&quot;;
+           &#125;
+
+        for(j=L-&gt;n;j&gt;=i;j--)    //在第i个位置中插入数
+           &#123;
+                 L-&gt;num[j]=L-&gt;num[j-1];
+           &#125;
+
+           L-&gt;num[i-1]=x;
+
+           L-&gt;n++;
+
+
+  &#125;
+
+  void  delete1(int i,List L)  //删掉第i个数  区分下标
+  &#123;  int j;
+     if(i&lt;0||L-&gt;n&lt;i) 
+     &#123;
+        cout&lt;&lt;&quot;error&quot;;
+     &#125;
+
+     for(j=i;j&lt;L-&gt;n;j++)
+        &#123;  
+              L-&gt;num[j-1]=L-&gt;num[j];
+        &#125;
+     L-&gt;n--;
+
+     return ;</code></pre>
+<p>​<br>      }</p>
+<pre><code>  void  deleteNUM(List L)  //   区分下标   删掉所有奇数号码元素 例如1  3  5  7  9对应下标为 0 2 4 4 6 8  但是每次删除一个数之后，
+  &#123;                        //    原本奇数的下标又会往前移动一格，所以先标记 再对标记的数字删除
+     bool ac[MAXSIZE];     //标志数组 当下标为奇数时
+  for(int i=0;i&lt;L-&gt;n;i=i+2) //将奇数号的数作标记。
+     &#123; 
+        ac[i]=true;
+
+     &#125;
+
+  for(int i=0;i&lt;L-&gt;n;i++)
+     &#123;
+           if(ac[i]=true)
+              delete1(i+1,L);
+     &#125;
+
+  &#125;
+
+  int main()
+  &#123;   
+  L = makeEmpty();  
+  insert(11,1,L);
+  insert(0,2,L);
+  insert(34,3,L);
+  insert(4,4,L);
+  insert(56,5,L);
+  insert(6,6,L);
+  insert(799,7,L);
+  insert(8,8,L);
+  insert(19,9,L);
+  insert(199,10,L);
+  for(int i=0;i&lt;Length(L);i++)
+        cout&lt;&lt;&quot; &quot;&lt;&lt;L-&gt;num[i];
+     deleteNUM(L);
+  // delete1(2,L);
+  cout&lt;&lt;endl;
+  for(int i=0;i&lt;Length(L);i++)
+        cout&lt;&lt;&quot; &quot;&lt;&lt;L-&gt;num[i];
+        return 0;
+  &#125;</code></pre>
+
         </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/04/17/ekr8lcxOvqDIJwj.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/04/12/new-japam/">
-    懵懂的日本游记  不定期补完</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-4-12</div>
-    <p>
-    </p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/04/12/new-japam/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+        <!-- .entry-content -->
+         
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/09/11/dfsmore/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://i.loli.net/2020/09/13/dUgjYCIbTNFJuHX.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://i.loli.net/2020/09/13/dUgjYCIbTNFJuHX.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                dfs二三事 和一些算法总结</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "BNpUSPAwrqrXpiwpcUc9vhh7-gzGzoHsz",
+        appKey: "3xHalNgAQFcgCrbTXuJxdIa9",
+        path: window.location.pathname,
+        placeholder: " 写下什么吧~~"
+      })
+  }
+</script>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="No" class="profile gravatar"><img src="https://i.loli.net/2020/09/11/jfVQXTG7MsUx6PF.jpg" itemprop="image" alt="科科" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="No" itemprop="url" rel="author">科科</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>嗯呢</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
 
-<!-- 
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/04/12/new-japam/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/04/17/ekr8lcxOvqDIJwj.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/04/12/new-japam/">
-    懵懂的日本游记  不定期补完</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-4-12</div>
-    <p>
-    </p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/04/12/new-japam/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
 
- -->
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
