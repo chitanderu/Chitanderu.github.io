@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/client/index.html</loc>
+    <loc>https://chitanderu.xyz/comment/index.html</loc>
     
     <lastmod>2020-03-16</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/comment/index.html</loc>
+    <loc>https://chitanderu.xyz/client/index.html</loc>
     
     <lastmod>2020-03-16</lastmod>
     
@@ -277,14 +277,14 @@
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</loc>
+    <loc>https://chitanderu.xyz/tags/%E6%97%A5%E6%9C%AC/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/%E6%97%A5%E6%9C%AC/</loc>
+    <loc>https://chitanderu.xyz/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
