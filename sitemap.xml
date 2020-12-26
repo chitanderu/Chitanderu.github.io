@@ -277,14 +277,14 @@
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</loc>
+    <loc>https://chitanderu.xyz/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-12-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://chitanderu.xyz/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</loc>
     <lastmod>2020-12-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -298,14 +298,14 @@
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/java/</loc>
+    <loc>https://chitanderu.xyz/tags/%E6%97%A5%E6%9C%AC/</loc>
     <lastmod>2020-12-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/%E6%97%A5%E6%9C%AC/</loc>
+    <loc>https://chitanderu.xyz/tags/java/</loc>
     <lastmod>2020-12-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -320,13 +320,6 @@
   
   <url>
     <loc>https://chitanderu.xyz/tags/Games/</loc>
-    <lastmod>2020-12-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chitanderu.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2020-12-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -360,6 +353,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://chitanderu.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2020-12-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -384,14 +384,14 @@
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/categories/%E6%97%A5%E6%9C%AC/</loc>
+    <loc>https://chitanderu.xyz/categories/%E6%AF%94%E8%B5%9B/</loc>
     <lastmod>2020-12-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/categories/%E6%AF%94%E8%B5%9B/</loc>
+    <loc>https://chitanderu.xyz/categories/%E6%97%A5%E6%9C%AC/</loc>
     <lastmod>2020-12-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
