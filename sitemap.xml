@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chitanderu.xyz/links/index.html</loc>
+    
+    <lastmod>2020-12-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chitanderu.xyz/shuoshuo/index.html</loc>
     
     <lastmod>2020-12-27</lastmod>
@@ -68,13 +75,6 @@
     <loc>https://chitanderu.xyz/2020/09/11/dfsmore/</loc>
     
     <lastmod>2020-09-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chitanderu.xyz/links/index.html</loc>
-    
-    <lastmod>2020-06-20</lastmod>
     
   </url>
   
