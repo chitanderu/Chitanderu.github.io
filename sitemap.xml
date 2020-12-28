@@ -219,13 +219,6 @@
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/comment/index.html</loc>
-    
-    <lastmod>2020-03-16</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chitanderu.xyz/client/index.html</loc>
     
     <lastmod>2020-03-16</lastmod>
@@ -233,7 +226,7 @@
   </url>
   
   <url>
-    <loc>https://chitanderu.xyz/tags/index.html</loc>
+    <loc>https://chitanderu.xyz/comment/index.html</loc>
     
     <lastmod>2020-03-16</lastmod>
     
@@ -241,6 +234,13 @@
   
   <url>
     <loc>https://chitanderu.xyz/rss/index.html</loc>
+    
+    <lastmod>2020-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chitanderu.xyz/tags/index.html</loc>
     
     <lastmod>2020-03-16</lastmod>
     
@@ -256,7 +256,7 @@
 
   <url>
     <loc>https://chitanderu.xyz/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -264,105 +264,105 @@
   
   <url>
     <loc>https://chitanderu.xyz/tags/web/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/%E6%82%A6%E8%AF%BB/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/future/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-12-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chitanderu.xyz/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/%E6%97%A5%E6%9C%AC/</loc>
-    <lastmod>2020-12-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chitanderu.xyz/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/java/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chitanderu.xyz/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/</loc>
+    <lastmod>2020-12-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chitanderu.xyz/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/PS3/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/Games/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/%E9%80%92%E5%BD%92-%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-12-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chitanderu.xyz/tags/%E9%BE%99%E6%97%8F/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%90%9C%E7%B4%A2/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chitanderu.xyz/tags/%E9%BE%99%E6%97%8F/</loc>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/dfs/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -371,35 +371,35 @@
   
   <url>
     <loc>https://chitanderu.xyz/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/categories/Diary/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/categories/Diary/life/</loc>
-    <lastmod>2020-12-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chitanderu.xyz/categories/%E6%AF%94%E8%B5%9B/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://chitanderu.xyz/categories/%E6%97%A5%E6%9C%AC/</loc>
-    <lastmod>2020-12-27</lastmod>
+    <lastmod>2020-12-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chitanderu.xyz/categories/%E6%AF%94%E8%B5%9B/</loc>
+    <lastmod>2020-12-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
